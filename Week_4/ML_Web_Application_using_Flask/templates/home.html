@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Search</title>
+</head>
+<body>
+	<h1>Flight Price Guesser</h1>
+	<form action="/PredictPrice" method="post">
+		<label for="stop_count">Stop Count:</label>
+		<select name="stop_count" id="stop_count">
+			<option value="zero">0 stop</option>
+			<option value="one">1 stop</option>
+			<option value="2">2 or more stops</option>
+		</select><br><br>
+
+		<label for="class_type">Class Type:</label>
+		<select name="class_type" id="class_type">
+			<option value="Economy">Economy</option>
+			<option value="Business">Business</option>
+		</select><br><br>
+
+		<label for="days_left">Days Left Until Flight:</label>
+		<input type="number" name="days_left" id="days_left" min="1" max="49"><br><br>
+
+		<label for="departure_time">Departure Time:</label>
+		<select name="departure_time" id="departure_time">
+			<option value="Morning">Morning</option>
+			<option value="Early_Morning">Early Morning</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			<option value="Night">Night</option>
+			<option value="Late_Night">Late Night</option>
+		</select><br><br>
+
+		<label for="arrival_time">Arrival Time:</label>
+		<select name="arrival_time" id="arrival_time">
+			<option value="Morning">Morning</option>
+			<option value="Early_Morning">Early Morning</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			<option value="Night">Night</option>
+			<option value="Late_Night">Late Night</option>
+		</select><br><br>
+
+		<label for="destination_city">Destination City:</label>
+		<select name="destination_city" id="destination_city">
+			<option value="Delhi">Delhi</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Bangalore">Bangalore</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Chennai">Chennai</option>
+		</select><br><br>
+
+		<label for="source_city">Source City:</label>
+		<select name="source_city" id="source_city">
+			<option value="Delhi">Delhi</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Bangalore">Bangalore</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Chennai">Chennai</option>
+		</select><br><br>
+
+
+		<label for="flight_duration">Flight Duration (hours):</label>
+		<input type="number" name="flight_duration" id="flight_duration" min="0" step="0.01"><br><br>
+
+		<label for="airline">Airline:</label>
+		<select name="airline" id="airline">
+			<option value="Vistara">Vistara</option>
+			<option value="Air_India">Air India</option>
+			<option value="Indigo">Indigo</option>
+			<option value="GO_FIRST">GO FIRST</option>
+			<option value="AirAsia">AirAsia</option>
+			<option value="SpiceJet">SpiceJet</option>
+		</select><br><br>
+
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>
