@@ -1,0 +1,64 @@
+dataset_name: testfile
+file_name: flight
+file_path: flight.csv
+file_type: csv
+inbound_delimiter: ','
+outbound_delimiter: '|'
+skip_leading_rows: 1
+table_name: edsurv
+column_counts:
+  baseFare: 8213882
+  destinationAirport: 8213882
+  elapsedDays: 8213882
+  fareBasisCode: 8213882
+  flightDate: 8213882
+  isBasicEconomy: 8213882
+  isNonStop: 8213882
+  isRefundable: 8213882
+  legId: 8213882
+  searchDate: 8213882
+  seatsRemaining: 8213882
+  segmentsAirlineCode: 8213882
+  segmentsAirlineName: 8213882
+  segmentsArrivalAirportCode: 8213882
+  segmentsArrivalTimeEpochSeconds: 8213882
+  segmentsArrivalTimeRaw: 8213882
+  segmentsCabinCode: 8213882
+  segmentsDepartureAirportCode: 8213882
+  segmentsDepartureTimeEpochSeconds: 8213882
+  segmentsDepartureTimeRaw: 8213882
+  segmentsDistance: 8213882
+  segmentsDurationInSeconds: 8213882
+  segmentsEquipmentDescription: 8058102
+  startingAirport: 8213882
+  totalFare: 8213882
+  totalTravelDistance: 7604289
+  travelDuration: 8213882
+columns:
+- legId
+- searchDate
+- flightDate
+- startingAirport
+- destinationAirport
+- fareBasisCode
+- travelDuration
+- elapsedDays
+- isBasicEconomy
+- isRefundable
+- isNonStop
+- baseFare
+- totalFare
+- seatsRemaining
+- totalTravelDistance
+- segmentsDepartureTimeEpochSeconds
+- segmentsDepartureTimeRaw
+- segmentsArrivalTimeEpochSeconds
+- segmentsArrivalTimeRaw
+- segmentsArrivalAirportCode
+- segmentsDepartureAirportCode
+- segmentsAirlineName
+- segmentsAirlineCode
+- segmentsEquipmentDescription
+- segmentsDurationInSeconds
+- segmentsDistance
+- segmentsCabinCode
