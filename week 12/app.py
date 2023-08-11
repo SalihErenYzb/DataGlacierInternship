@@ -1,8 +1,8 @@
 import pandas as pd
 import plotly.express as px
 import dash
-from dash import dcc
 from dash import html
+from dash import dcc
 from dash.dependencies import Input, Output
 from plotly.subplots import make_subplots
 
@@ -18,33 +18,33 @@ fig1 = px.scatter(df, x='Age', y='Satisfaction Rate', color='Satisfaction Rate',
                   labels={'Age': 'Age', 'Satisfaction Rate': 'Satisfaction Rate'},
                   trendline='ols')  # Add a trendline for linear regression
 
-# Country vs. Satisfaction Rate (Scatter Plot)
-fig2 = px.scatter(df, x='Country', y='Satisfaction Rate', color='Satisfaction Rate',
+# Country vs. Satisfaction Rate (Histogram Plot)
+fig2 = px.histogram(df, x='Country', y='Satisfaction Rate', histfunc='avg',
                   title='Country vs. Satisfaction Rate',
-                  labels={'Country': 'Country', 'Satisfaction Rate': 'Satisfaction Rate'})
+                  labels={'Country': 'Country'})
 
-# Education Level vs. Satisfaction Rate (Scatter Plot)
-fig3 = px.scatter(df, x='Education Level', y='Satisfaction Rate', color='Satisfaction Rate',
+# Education Level vs. Satisfaction Rate (histogram Plot)
+fig3 = px.histogram(df, x='Education Level', y='Satisfaction Rate', histfunc='avg',
                   title='Education Level vs. Satisfaction Rate',
                   labels={'Education Level': 'Education Level', 'Satisfaction Rate': 'Satisfaction Rate'})
 
-# Number of Languages Spoken vs. Satisfaction Rate (Scatter Plot)
-fig4 = px.scatter(df, x='Number of Languages Spoken', y='Satisfaction Rate', color='Satisfaction Rate',
+# Number of Languages Spoken vs. Satisfaction Rate (histogram Plot)
+fig4 = px.histogram(df, x='Number of Languages Spoken', y='Satisfaction Rate',histfunc='avg',
                   title='Number of Languages Spoken vs. Satisfaction Rate',
                   labels={'Number of Languages Spoken': 'Number of Languages Spoken', 'Satisfaction Rate': 'Satisfaction Rate'})
 
 # Gender vs. Satisfaction Rate (Scatter Plot)
-fig5 = px.scatter(df, x='Gender', y='Satisfaction Rate', color='Satisfaction Rate',
+fig5 = px.histogram(df, x='Gender', y='Satisfaction Rate', histfunc='avg',
                   title='Gender vs. Satisfaction Rate',
                   labels={'Gender': 'Gender', 'Satisfaction Rate': 'Satisfaction Rate'})
 
-# Marital Status vs. Satisfaction Rate (Scatter Plot)
-fig6 = px.scatter(df, x='Marital Status', y='Satisfaction Rate', color='Satisfaction Rate',
+# Marital Status vs. Satisfaction Rate (histogram Plot)
+fig6 = px.histogram(df, x='Marital Status', y='Satisfaction Rate',histfunc='avg',
                   title='Marital Status vs. Satisfaction Rate',
                   labels={'Marital Status': 'Marital Status', 'Satisfaction Rate': 'Satisfaction Rate'})
 
-# Number of Children vs. Satisfaction Rate (Scatter Plot)
-fig7 = px.scatter(df, x='Number of Children', y='Satisfaction Rate', color='Satisfaction Rate',
+# Number of Children vs. Satisfaction Rate (histogram Plot)
+fig7 = px.histogram(df, x='Number of Children', y='Satisfaction Rate', histfunc='avg',
                   title='Number of Children vs. Satisfaction Rate',
                   labels={'Number of Children': 'Number of Children', 'Satisfaction Rate': 'Satisfaction Rate'})
 
