@@ -5,9 +5,9 @@ from dash import html
 from dash import dcc
 from dash.dependencies import Input, Output
 from plotly.subplots import make_subplots
-
+import os
 # Loading the dataset to a dataframe
-df = pd.read_csv('week 12\master_data.csv')
+df = pd.read_csv('master_data.csv')
 
 # Initializing the Dash app
 app = dash.Dash(__name__)
